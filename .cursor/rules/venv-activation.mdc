@@ -1,0 +1,30 @@
+---
+description: Activate the repo-root .venv before Python tooling and shell work
+alwaysApply: true
+---
+
+# Virtual environment
+
+The project virtual environment lives at **`.venv/`** in the repository root (it may be hidden from listings). **Activate it before** installing packages, running Python, pytest, linters, formatters, or any tool that expects project dependencies.
+
+## Windows (PowerShell)
+
+From the repo root:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+## Windows (Command Prompt)
+
+```bat
+.\.venv\Scripts\activate.bat
+```
+
+## Unix-like shells
+
+```bash
+source .venv/bin/activate
+```
+
+After activation, the shell prompt usually shows `(.venv)`. Prefer using this environment for all Python-related commands in this project rather than the global interpreter.
